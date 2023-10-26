@@ -8,7 +8,7 @@ public class Main {
         Scanner tcd = new Scanner(System.in);
         String cpf = tcd.nextLine();
 
-        if (Util.validaCPF(cpf)) {
+        if (Util.validacaoCPF(cpf)) {
             System.out.println("CPF OK");
         } else {
             System.out.println("CPF Inválido!");
@@ -19,7 +19,7 @@ public class Main {
 }
 
 class Util {
-    public static boolean validaCPF(String cpf) {
+    public static boolean validacaoCPF(String cpf) {
         int numero = 0;
         int indice = 1;
         int digito1 = 0;
